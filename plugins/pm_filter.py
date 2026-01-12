@@ -808,15 +808,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "start":
         buttons = [[
-                    InlineKeyboardButton('+ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ +', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://telegram.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🧧 ᴛʀᴇɴᴅɪɴɢ ', callback_data="topsearch"),
-                    InlineKeyboardButton('🎟️ ᴜᴘɢʀᴀᴅᴇ ', callback_data="premium"),
+                    InlineKeyboardButton('🕵️‍♂️ Tᴏᴘ Sᴇᴀʀᴄʜ ', callback_data="topsearch"),
+                    InlineKeyboardButton('🎋 Pʀᴇᴍɪᴜᴍ Pʟᴀɴ', callback_data="premium"),
                 ],[
-                    InlineKeyboardButton('♻️ ᴅᴍᴄᴀ', callback_data='disclaimer'),
-                    InlineKeyboardButton('👤 ᴀʙᴏᴜᴛ ', callback_data='me')
-                ],[
-                    InlineKeyboardButton('🚫 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 🚫', callback_data="earn")
+                    InlineKeyboardButton('⚡ Dᴇsᴄʟɪᴍᴇʀ ⚡', callback_data='disclaimer'),
+                    InlineKeyboardButton('✨ Aʙᴏᴜᴛ Mᴇ ✨ ', callback_data='me')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
@@ -966,7 +964,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "source":
         buttons = [[
-            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 📜', url='https://github.com/NBBotz/Auto-Filter-Bot.git'),
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 📜', url='https://t.me/Graduate_Movies'),
             InlineKeyboardButton('⇋ ʙᴀᴄᴋ ⇋', callback_data='me')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
